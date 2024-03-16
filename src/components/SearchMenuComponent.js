@@ -84,7 +84,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="COMEDY"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('35')}></input>
                     </div>
                     <div className="col">
@@ -92,7 +91,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="ANIMATION"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('16')}></input>
                     </div>
                     <div className="col">
@@ -100,7 +98,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="ADVENTURE"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('12')}></input>
                     </div>
                     <div className="col">
@@ -108,7 +105,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="ACTION"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('28')}></input>
                     </div>
                     <div className="col">
@@ -116,7 +112,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="THRILLER"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('53')}></input>
                     </div>
                     <div className="col">
@@ -124,7 +119,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="WAR"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('10752')}></input>
                     </div>
                     <div className="col">
@@ -132,7 +126,6 @@ const SearchMenuComponent = () => {
                             type="button"
                             value="DOCUMENTARY"
                             class="btn btn-success"
-                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('99')}></input>
                     </div>
                 </div>

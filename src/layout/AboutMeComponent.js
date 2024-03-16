@@ -26,7 +26,7 @@ const AboutMeComponent = () => {
                                 <div class="row p-3 align-items-center justify-content-center">
                                     <button
                                         type="button"
-                                        class="btn btn-success"
+                                        class="btn btn-success disabled"
                                         style={{ width: '100%' }}>
                                         <i class="bi bi-instagram"></i>
                                     </button>
@@ -36,13 +36,17 @@ const AboutMeComponent = () => {
                                         type="button"
                                         class="btn btn-success"
                                         style={{ width: '100%' }}>
-                                        <i class="bi bi-linkedin"></i>
+                                        <a
+                                            href="https://www.linkedin.com/in/dmamarques/"
+                                            target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
                                     </button>
                                 </div>
                                 <div class="row p-3 align-items-center justify-content-center">
                                     <button
                                         type="button"
-                                        class="btn btn-success"
+                                        class="btn btn-success disabled"
                                         style={{ width: '100%' }}>
                                         <i class="bi bi-google"></i>
                                     </button>
@@ -52,7 +56,11 @@ const AboutMeComponent = () => {
                                         type="button"
                                         class="btn btn-success"
                                         style={{ width: '100%' }}>
-                                        <i class="bi bi-github"></i>
+                                        <a
+                                            href="https://github.com/dmmarques"
+                                            target="_blank">
+                                            <i class="bi bi-github"></i>
+                                        </a>
                                     </button>
                                 </div>
                             </div>
