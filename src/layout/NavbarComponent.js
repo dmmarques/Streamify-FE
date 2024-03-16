@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavbarComponent = () => {
     return (
-        <div
-            className="container-fluid"
-            style={{ padding: '0' }}>
+        <div className="container-fluid p-0">
             <nav
                 class="navbar navbar-expand-lg bg-body-tertiary"
                 data-bs-theme="dark">
