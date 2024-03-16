@@ -13,19 +13,21 @@ const AboutMeComponent = () => {
                         <div
                             class="row g-0 d-flex align-items-center justify-content-center"
                             style={{ height: '50%' }}>
-                            <div class="col-md-2 pr-2 d-flex align-items-center justify-content-center w-25">
+                            <div
+                                class="col-md-2 pr-2 d-flex align-items-center justify-content-center"
+                                style={{ width: '25%' }}>
                                 <img
-                                    src={require('../images/movie.jpeg')}
+                                    src={require('../images/me.png')}
                                     alt="..."
-                                    style={{ borderRadius: '75%' }}
+                                    style={{ width: '100%', borderRadius: '75%' }}
                                 />
                             </div>
-                            <div class="col-md-1 p-3 w-25">
+                            <div class="col-md-1 p-3 w-10">
                                 <div class="row p-3 align-items-center justify-content-center">
                                     <button
                                         type="button"
                                         class="btn btn-success"
-                                        style={{ width: '50%' }}>
+                                        style={{ width: '100%' }}>
                                         <i class="bi bi-instagram"></i>
                                     </button>
                                 </div>
@@ -33,7 +35,7 @@ const AboutMeComponent = () => {
                                     <button
                                         type="button"
                                         class="btn btn-success"
-                                        style={{ width: '50%' }}>
+                                        style={{ width: '100%' }}>
                                         <i class="bi bi-linkedin"></i>
                                     </button>
                                 </div>
@@ -41,7 +43,7 @@ const AboutMeComponent = () => {
                                     <button
                                         type="button"
                                         class="btn btn-success"
-                                        style={{ width: '50%' }}>
+                                        style={{ width: '100%' }}>
                                         <i class="bi bi-google"></i>
                                     </button>
                                 </div>
@@ -49,12 +51,12 @@ const AboutMeComponent = () => {
                                     <button
                                         type="button"
                                         class="btn btn-success"
-                                        style={{ width: '50%' }}>
+                                        style={{ width: '100%' }}>
                                         <i class="bi bi-github"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-md text-center 2-50">
+                            <div class="col-md text-center w-60">
                                 <div class="card-body">
                                     <h3 class="card-title">Diogo Miguel Alves Marques</h3>
                                     <p class="card-text">As a dedicated software developer, I've spent the last 1.5 years specializing in backend development with Java and Spring Boot. Now, I'm expanding my expertise to the frontend. My goal is to master frontend technologies like HTML, CSS, and JavaScript to create seamless user experiences. With a strong foundation in backend development and a passion for learning, I'm excited to tackle new challenges and contribute to innovative software solutions.</p>
@@ -66,15 +68,15 @@ const AboutMeComponent = () => {
                                         <h3>Tech Stack</h3>
                                         <div class="col-md">Java</div>
                                         <div class="col-md">JavaScript</div>
-                                        <div class="col-md">Python</div>
-                                        <div class="col-md">C++</div>
+                                        <div class="col-md">HTML</div>
+                                        <div class="col-md">CSS</div>
                                     </div>
                                     <div class="col-md">
                                         <h3>Hobbies</h3>
                                         <div class="col-md">Football</div>
                                         <div class="col-md">Videogames</div>
                                         <div class="col-md">Programming</div>
-                                        <div class="col-md">Friends</div>
+                                        <div class="col-md">Hiking</div>
                                     </div>
                                 </div>
                             </div>

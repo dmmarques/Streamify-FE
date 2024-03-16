@@ -13,6 +13,12 @@
     animation: blink 2s ease-in infinite;
 }
 
+.aNotfound:link, .aNotfound:visited {
+    color: #198754;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 @keyframes blink {
     from, to { opacity: 1 }
     50% { opacity: 0 }
