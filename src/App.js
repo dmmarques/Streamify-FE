@@ -6,12 +6,15 @@ import NotFoundComponent from './layout/NotFoundComponent';
 import AboutMeComponent from './layout/AboutMeComponent';
 import MoviesComponent from './components/MoviesComponent';
 import HomeComponent from './layout/HomeComponent';
+import MovieDetailsComponent from './components/MovieDetailsComponent';
 
 const App = () => {
     return (
         <MovieState>
             <Router>
-                <div>
+                <div
+                    className="container-fluid"
+                    style={{ padding: '0' }}>
                     <NavbarComponent></NavbarComponent>
                     <Routes>
                         <Route
@@ -20,6 +23,9 @@ const App = () => {
                         <Route
                             path="/movies"
                             element={<MoviesComponent />}></Route>
+                        <Route
+                            path="/movie/:id"
+                            element={<MovieDetailsComponent />}></Route>
                         <Route
                             path="/aboutMe"
                             element={<AboutMeComponent />}></Route>
