@@ -33,7 +33,7 @@ const HomeComponent = () => {
                             target="_blank"
                             className="linkCaroussel">
                             <h3>Are you a curious developer ?</h3>
-                            <p>Check our code base</p>
+                            <p>Check our code base!</p>
                         </a>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -47,8 +47,8 @@ const HomeComponent = () => {
                         <Link
                             to="/aboutMe"
                             className="linkCaroussel">
-                            <h3>Want to know more about us ?</h3>
-                            <p>Check us out !</p>
+                            <h3>Want to know more about who created Streamify ?</h3>
+                            <p>Check us out!</p>
                         </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
