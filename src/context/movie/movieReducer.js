@@ -1,4 +1,3 @@
-import { act } from 'react-dom/test-utils';
 import { GET_ALL_MOVIES, GET_MOVIE, SET_LOADING, GET_MOVIES_BY_GENRE, GET_MOVIES_BY_RATING, GET_MOVIES_BY_YEAR, SET_API_ERROR, GET_MOVIE_DETAILS_BY_ID } from '../types';
 
 export default (state, action) => {

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import MovieContext from '../context/movie/movieContext';
 import MoviesItemsComponent from './MoviesItemsComponent';
 import SearchMenuComponent from './SearchMenuComponent';
