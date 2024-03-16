@@ -22,30 +22,29 @@ const NavbarComponent = () => {
                             <li class="nav-item">
                                 <Link
                                     class="nav-link"
-                                    to="/aboutMe">
-                                    Meet the team
-                                </Link>
-                            </li>
-                            <li class="nav-item">
-                                <Link
-                                    class="nav-link"
                                     to="/movies">
                                     Movies
                                 </Link>
                             </li>
                             <li class="nav-item">
-                                <a
-                                    href="https://github.com/dmmarques/Streamify-FE"
-                                    target="_blank">
-                                    <button
-                                        type="button"
-                                        class="btn btn-success">
-                                        <i class="bi bi-github"></i>
-                                    </button>
-                                </a>
+                                <Link
+                                    class="nav-link"
+                                    to="/aboutMe">
+                                    About Me
+                                </Link>
                             </li>
                         </ul>
                         <span class="navbar-text">
+                            <a
+                                href="https://github.com/dmmarques/Streamify-FE"
+                                target="_blank"
+                                class="m-2">
+                                <button
+                                    type="button"
+                                    class="btn btn-success">
+                                    <i class="bi bi-github"></i>
+                                </button>
+                            </a>
                             <i class="bi bi-c-circle"></i>Copyright 2024
                         </span>
                     </div>
