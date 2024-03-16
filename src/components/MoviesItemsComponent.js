@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MoviesItemsComponent = ({ movie }) => {
     const getPosterURL = (posterPath) => {
         return 'https://media.themoviedb.org/t/p/w220_and_h330_face' + posterPath;
-    };
-
-    const [showComponent, setShowComponent] = useState(false);
-
-    const handleMovieDetails = () => {
-        setShowComponent(!showComponent);
     };
 
     return (

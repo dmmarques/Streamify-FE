@@ -19,6 +19,13 @@
     text-decoration: underline;
 }
 
+.linkCaroussel:link, .linkCaroussel:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
 @keyframes blink {
     from, to { opacity: 1 }
     50% { opacity: 0 }

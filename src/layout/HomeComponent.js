@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 
 const HomeComponent = () => {
     return (
@@ -9,42 +10,55 @@ const HomeComponent = () => {
                     <img
                         width="100%"
                         height="200"
-                        src="https://img.freepik.com/free-photo/yellow-watercolor-paper_95678-446.jpg"
+                        src="https://img.freepik.com/free-photo/abstract-orange-background-layout-designstudioroom-web-template-business-report-with-smooth-circle-gradient-color_1258-101951.jpg"
                     />
                     <Carousel.Caption>
-                        <h3>Welcome to Streamify !</h3>
-                        <p>Here you can watch all your favorite movies.</p>
+                        <Link
+                            to="/movies"
+                            className="linkCaroussel">
+                            <h3>Welcome to Streamify !</h3>
+                            <p>Here you can watch all your favorite movies.</p>
+                        </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         width="100%"
                         height="200"
-                        src="https://static.vecteezy.com/system/resources/previews/005/182/612/non_2x/green-abstract-geometric-shape-background-free-vector.jpg"
+                        src="https://img.freepik.com/free-photo/abstract-smooth-orange-background-layout-designstudioroom-web-template-business-report-with-smooth-circle-gradient-color_1258-96066.jpg"
                     />
                     <Carousel.Caption>
-                        <h3>Are you a curious developer ?</h3>
-                        <p>Check our code base, here !</p>
+                        <a
+                            href="https://github.com/dmmarques/Streamify-FE"
+                            target="_blank"
+                            className="linkCaroussel">
+                            <h3>Are you a curious developer ?</h3>
+                            <p>Check our code base</p>
+                        </a>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         width="100%"
                         height="200"
-                        src="https://img.freepik.com/free-photo/abstract-luxury-soft-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-54521.jpg"
+                        src="https://img.freepik.com/free-photo/green-painted-smooth-textured-background_53876-108262.jpg"
                     />
                     <Carousel.Caption>
-                        <h3>Want to know more about us ?</h3>
-                        <p>Check us out !</p>
+                        <Link
+                            to="/aboutMe"
+                            className="linkCaroussel">
+                            <h3>Want to know more about us ?</h3>
+                            <p>Check us out !</p>
+                        </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
             <div
-                className="container min-vh-100"
+                className="container min-vh-100 pt-5"
                 data-bs-theme="dark">
-                <div class="card mb-3 w-100">
+                <div class="card mb-3 h-100 w-100">
                     <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
                             <img
                                 src={require('../images/favicon.ico')}
                                 alt="Stramify Logo"
@@ -52,57 +66,44 @@ const HomeComponent = () => {
                             />
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body w-100">
-                                <h2 class="card-title text-center">Overview</h2>
-                                <div class="card text-white bg-success mb-3 w-100">
-                                    <div class="card-header text-center w-100">As a React developer, I embarked on a journey to craft a movie app, and Streamify is the result of that endeavor. The primary goal was to create a simple, user-friendly application that simplifies the process of discovering films based on title, rating, and genre. Whether you're in the mood for an action-packed blockbuster, a heartwarming romance, or a spine-tingling thriller, Streamify has something for everyone. Join us on this cinematic adventure and elevate your movie-watching experience with Streamify today!</div>
-                                </div>
-                                <p class="card-text"></p>
-                                <div class="card-body text-center">
-                                    <h2>Functionality</h2>
-                                    <div class="row">
-                                        <div class="col md-4">
-                                            <div class="card text-white bg-success mb-3">
-                                                <div class="card-header text-center">Simple Intuitive User Interface</div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card text-white bg-success mb-3"
-                                                style={{ maxWidth: '18rem' }}>
-                                                <div class="card-header text-center">Search Functionality</div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card text-white bg-success mb-3"
-                                                style={{ maxWidth: '18rem' }}>
-                                                <div class="card-header text-center">State Management using the powerful Context API</div>
-                                            </div>
-                                        </div>
+                            <div class="row w-100">
+                                <div class="card-body d-flex flex-column text-center">
+                                    <h2 class="card-title text-center">Overview</h2>
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div class="card-header text-center w-100">As a React developer, I embarked on a journey to craft a movie app, and Streamify is the result of that endeavor. The primary goal was to create a simple, user-friendly application that simplifies the process of discovering films based on title, rating, and genre. Whether you're in the mood for an action-packed blockbuster, a heartwarming romance, or a spine-tingling thriller, Streamify has something for everyone. Join us on this cinematic adventure and elevate your movie-watching experience with Streamify today!</div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div
-                                                class="card text-white bg-success mb-3"
-                                                style={{ maxWidth: '18rem' }}>
-                                                <div class="card-header text-center">State Management using the powerful Context API</div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card text-white bg-success mb-3"
-                                                style={{ maxWidth: '18rem' }}>
-                                                <div class="card-header text-center">Error Handling</div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card text-white bg-success mb-3"
-                                                style={{ maxWidth: '18rem' }}>
-                                                <div class="card-header text-center">Powered by Axios</div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="row w-100">
+                                <h2 class="card-title text-center">Core Features</h2>
+                                <div class="col-lg-4 d-flex align-items-stretch">
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div className="card-body text-center">Simple and Intuitive User Interface</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-stretch">
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div className="card-body d-flex align-items-center justify-content-center">Search Menu</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-stretch">
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div className="card-body d-flex align-items-center justify-content-center">Powered by Axios</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-stretch">
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div className="card-body text-center">State Management using the powerful Context API</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-stretch">
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div className="card-body d-flex align-items-center justify-content-center">Error Handling</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-flex align-items-stretch">
+                                    <div class="card text-white bg-success mb-3 w-100">
+                                        <div className="card-body d-flex align-items-center justify-content-center">Open Source</div>
                                     </div>
                                 </div>
                             </div>
