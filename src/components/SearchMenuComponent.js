@@ -29,19 +29,23 @@ const SearchMenuComponent = () => {
                 style={{ width: '20rem', textAlign: 'center', height: '80%' }}>
                 <h1 class="text-success">Find Movie</h1>
                 <MovieFilter />
-                <div className="row">
+                <div className="row m-2">
                     <h5 class="text-success">Rating</h5>
-                    <div className="col w-100">
+                    <div className="col">
                         <input
                             type="button"
                             value="3.0"
                             class="btn btn-success"
                             onClick={() => handleRatingFilter('3.0')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="5.0"
                             class="btn btn-success"
                             onClick={() => handleRatingFilter('5.0')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="8.0"
@@ -49,19 +53,23 @@ const SearchMenuComponent = () => {
                             onClick={() => handleRatingFilter('8.0')}></input>
                     </div>
                 </div>
-                <div className="row">
-                    <h5 class="text-success">YEAR</h5>
-                    <div className="col w-100">
+                <div className="row m-2">
+                    <h5 class="text-success">Year</h5>
+                    <div className="col">
                         <input
                             type="button"
                             value="2022"
                             class="btn btn-success"
                             onClick={() => handleYearFilter('2022')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="2023"
                             class="btn btn-success"
                             onClick={() => handleYearFilter('2023')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="2024"
@@ -69,29 +77,63 @@ const SearchMenuComponent = () => {
                             onClick={() => handleYearFilter('2024')}></input>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row m-2">
                     <h5 class="text-success">Genre</h5>
-                    <div className="col w-100">
+                    <div className="col">
                         <input
                             type="button"
                             value="COMEDY"
                             class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('35')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="ANIMATION"
                             class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('16')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="ADVENTURE"
                             class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('12')}></input>
+                    </div>
+                    <div className="col">
                         <input
                             type="button"
                             value="ACTION"
                             class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
                             onClick={() => handleGenreFilter('28')}></input>
+                    </div>
+                    <div className="col">
+                        <input
+                            type="button"
+                            value="THRILLER"
+                            class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
+                            onClick={() => handleGenreFilter('53')}></input>
+                    </div>
+                    <div className="col">
+                        <input
+                            type="button"
+                            value="WAR"
+                            class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
+                            onClick={() => handleGenreFilter('10752')}></input>
+                    </div>
+                    <div className="col">
+                        <input
+                            type="button"
+                            value="DOCUMENTARY"
+                            class="btn btn-success"
+                            style={{ borderRadius: '90%' }}
+                            onClick={() => handleGenreFilter('99')}></input>
                     </div>
                 </div>
             </div>
