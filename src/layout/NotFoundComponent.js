@@ -17,7 +17,7 @@ const NotFoundComponent = () => {
                         <ul>
                             <li>
                                 <Link
-                                    to="/home"
+                                    to="/"
                                     className="aNotfound">
                                     Go Back to the Home Page
                                 </Link>

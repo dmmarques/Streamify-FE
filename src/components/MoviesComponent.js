@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import MovieContext from '../context/movie/movieContext';
 import MoviesItemsComponent from './MoviesItemsComponent';
+import NoMoviesFoundComponent from './NoMoviesFoundComponent';
 import SearchMenuComponent from './SearchMenuComponent';
 import Spinner from './Spinner';
 import NotFoundComponent from '../layout/NotFoundComponent';
@@ -43,8 +44,16 @@ const MoviesComponent = () => {
                         : movies.map((movie) => renderMovies(movie))}
                         </div>
                     }
+                    {filteredMovies && filteredMovies.length === 0 ? (
+                        <div>
+                            <NoMoviesFoundComponent />
+                        </div>
+                    ) : (
+                        <div>
+                            <NotFoundComponent />
+                        </div>
+                    )}
                 </div>
-                <div>{filteredMovies && filteredMovies.length === 0 ? <div>NO MOVIES FOUND</div> : <div>NULL</div>}</div>
             </div>
         </div>
     );

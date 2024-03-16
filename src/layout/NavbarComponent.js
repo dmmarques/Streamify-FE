@@ -10,7 +10,7 @@ const NavbarComponent = () => {
                 <div class="container-fluid">
                     <Link
                         class="navbar-brand"
-                        to="/home">
+                        to="/">
                         Home
                     </Link>
                     <div

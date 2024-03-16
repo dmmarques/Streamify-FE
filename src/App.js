@@ -18,7 +18,7 @@ const App = () => {
                     <NavbarComponent></NavbarComponent>
                     <Routes>
                         <Route
-                            path="/home"
+                            path="/"
                             element={<HomeComponent />}></Route>
                         <Route
                             path="/movies"

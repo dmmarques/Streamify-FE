@@ -5,10 +5,6 @@ import MovieContext from '../context/movie/movieContext';
 const SearchMenuComponent = () => {
     const movieContext = useContext(MovieContext);
 
-    function onFilterChange(event) {
-        console.log(event.target.value);
-    }
-
     const handleGenreFilter = (genre) => {
         movieContext.getMoviesByGenre(genre);
     };
