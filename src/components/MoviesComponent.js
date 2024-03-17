@@ -37,8 +37,7 @@ const MoviesComponent = () => {
                 </div>
                 <div className="col p-2">
                     {apiError ? <ErrorComponent /> : loading ? <Spinner /> : <div className="row justify-content-center">{filteredMovies !== null ? filteredMovies.map((movie) => renderMovies(movie)) : movies.map((movie) => renderMovies(movie))}</div>}
-                    {/* Conditional rendering for NoMoviesFoundComponent */}
-                    {filteredMovies !== null && filteredMovies.length === 0 && (
+                    {!apiError && filteredMovies !== null && filteredMovies.length === 0 && (
                         <div>
                             <NoMoviesFoundComponent />
                         </div>
