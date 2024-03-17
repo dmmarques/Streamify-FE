@@ -6,7 +6,7 @@ const NoMoviesFoundComponent = () => {
             <table style={{ textAlign: 'center' }}>
                 <tr>
                     <i class="bi bi-eye-slash-fill errorIcon-300"></i>
-                    <h3>No results were found ... Try something else.</h3>
+                    <h3>We could not find what you're looking for... Try something else.</h3>
                 </tr>
             </table>
         </div>
