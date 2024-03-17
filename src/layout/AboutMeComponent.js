@@ -34,11 +34,11 @@ const AboutMeComponent = () => {
                                 <div class="row p-3 align-items-center justify-content-center">
                                     <button
                                         type="button"
-                                        class="btn btn-success"
-                                        style={{ width: '100%' }}>
+                                        class="btn btn-success w-100">
                                         <a
                                             href="https://www.linkedin.com/in/dmamarques/"
-                                            target="_blank">
+                                            target="_blank"
+                                            class="aboutMeButton">
                                             <i class="bi bi-linkedin"></i>
                                         </a>
                                     </button>
@@ -46,8 +46,7 @@ const AboutMeComponent = () => {
                                 <div class="row p-3 align-items-center justify-content-center">
                                     <button
                                         type="button"
-                                        class="btn btn-success disabled"
-                                        style={{ width: '100%' }}>
+                                        class="btn btn-success disabled w-100">
                                         <i class="bi bi-google"></i>
                                     </button>
                                 </div>
@@ -58,7 +57,8 @@ const AboutMeComponent = () => {
                                         style={{ width: '100%' }}>
                                         <a
                                             href="https://github.com/dmmarques"
-                                            target="_blank">
+                                            target="_blank"
+                                            class="aboutMeButton">
                                             <i class="bi bi-github"></i>
                                         </a>
                                     </button>

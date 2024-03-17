@@ -13,7 +13,7 @@ const MovieDetailsComponent = () => {
 
     return (
         <div
-            className="container-fluid pt-3 pb-3"
+            className="container-fluid pt-3 pb-3 min-vh-100"
             data-bs-theme="dark">
             <div
                 class="card p-3"
