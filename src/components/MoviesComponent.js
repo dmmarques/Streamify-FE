@@ -35,22 +35,12 @@ const MoviesComponent = () => {
                 <div className="col-2 p-2 w-25">
                     <SearchMenuComponent />
                 </div>
-                {/* prettier-ignore */}
                 <div className="col p-2">
-                    {apiError ? <ErrorComponent /> 
-                    : loading ? <Spinner /> 
-                    : <div className="row justify-content-center">{filteredMovies !== null 
-                        ? filteredMovies.map((movie) => renderMovies(movie)) 
-                        : movies.map((movie) => renderMovies(movie))}
-                        </div>
-                    }
-                    {filteredMovies && filteredMovies.length === 0 ? (
+                    {apiError ? <ErrorComponent /> : loading ? <Spinner /> : <div className="row justify-content-center">{filteredMovies !== null ? filteredMovies.map((movie) => renderMovies(movie)) : movies.map((movie) => renderMovies(movie))}</div>}
+                    {/* Conditional rendering for NoMoviesFoundComponent */}
+                    {filteredMovies !== null && filteredMovies.length === 0 && (
                         <div>
                             <NoMoviesFoundComponent />
-                        </div>
-                    ) : (
-                        <div>
-                            <NotFoundComponent />
                         </div>
                     )}
                 </div>

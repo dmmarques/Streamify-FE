@@ -33,7 +33,7 @@ const HomeComponent = () => {
                             target="_blank"
                             className="linkCaroussel">
                             <h3>Are you a curious developer ?</h3>
-                            <p>Check our code base!</p>
+                            <p>Check the code base !</p>
                         </a>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -48,7 +48,7 @@ const HomeComponent = () => {
                             to="/aboutMe"
                             className="linkCaroussel">
                             <h3>Want to know more about who created Streamify ?</h3>
-                            <p>Check us out!</p>
+                            <p>Click here !</p>
                         </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -103,7 +103,7 @@ const HomeComponent = () => {
                                 </div>
                                 <div class="col-lg-4 d-flex align-items-stretch">
                                     <div class="card text-white bg-success mb-3 w-100">
-                                        <div className="card-body d-flex align-items-center justify-content-center">Open Source</div>
+                                        <div className="card-body d-flex align-items-center justify-content-center">Conditional Rendering</div>
                                     </div>
                                 </div>
                             </div>
