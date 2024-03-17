@@ -49,7 +49,9 @@ const MovieState = (props) => {
     const getMoviesByGenre = async (genre) => {
         setLoading();
         console.log('Fetching movies by genre');
-        const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=${genre}`);
+        const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=${genre}`).catch(function (error) {
+            setApiError();
+        });
         console.log(res.data);
         setTimeout(function () {
             dispatch({ type: GET_MOVIES_BY_GENRE, payload: res.data.results });
@@ -60,7 +62,9 @@ const MovieState = (props) => {
     const getMoviesByRating = async (rating) => {
         setLoading();
         console.log('Fetching movies by Rating');
-        const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&vote_average.gte=${rating}`);
+        const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&vote_average.gte=${rating}`).catch(function (error) {
+            setApiError();
+        });
         setTimeout(function () {
             dispatch({ type: GET_MOVIES_BY_RATING, payload: res.data.results });
         }, 1000);
@@ -70,7 +74,9 @@ const MovieState = (props) => {
     const getMoviesByYear = async (year) => {
         setLoading();
         console.log('Fetching movies by Year');
-        const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&year=${year}`);
+        const res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&year=${year}`).catch(function (error) {
+            setApiError();
+        });
         setTimeout(function () {
             dispatch({ type: GET_MOVIES_BY_YEAR, payload: res.data.results });
         }, 1000);
@@ -80,7 +86,9 @@ const MovieState = (props) => {
     const getMovieDetailsById = async (id) => {
         setLoading();
         console.log('Fetching movie details by ID: ' + id);
-        const res = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`);
+        const res = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`).catch(function (error) {
+            setApiError();
+        });
         setTimeout(function () {
             dispatch({ type: GET_MOVIE_DETAILS_BY_ID, payload: res.data });
         }, 1000);
